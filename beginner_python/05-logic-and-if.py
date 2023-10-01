@@ -44,6 +44,34 @@ print("A before B?", "ABC" < "BCD")
 #Not operator can be used to negate an equality check
 #Read A is not equal to B? 
 print("A != B?", "A" != "B")
+# Define a list of questions and answers
+questions = [
+    "What is the capital of France?",
+    "Which planet is known as the Red Planet?",
+    "What is 5 + 7?",
+    "What is the largest mammal in the world?",
+    "In which year did Christopher Columbus discover America?",
+    "What is the chemical symbol for gold?",
+    "How many continents are there in the world?",
+    "Who wrote the play 'Romeo and Juliet'?",
+    "What is the tallest mountain in the world?",
+    "What gas do plants absorb from the atmosphere?",
+]
+
+answers = ["Paris", "Mars", 12, "Blue Whale", 1492, "Au", 7, "William Shakespeare", "Mount Everest", "Carbon Dioxide"]
+
+# Initialize a score counter
+score = 0
+
+# Loop through the questions
+for i in range(len(questions)):
+    print(f"Question {i + 1}: {questions[i]}")
+    user_answer = input("Your Answer: ").strip()
+
+    # Check if the user's answer is correct
+    if user_answer == str(answers[i]):
+        print
+
 
 
 ########### IF STATEMENT ##########
